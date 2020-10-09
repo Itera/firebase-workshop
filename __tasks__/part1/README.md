@@ -17,7 +17,7 @@ To make things a bit easier for you we have made some parts of the authenticatio
 1. In the [Firebase console](https://console.firebase.google.com/?authuser=0), open the Auth section.
 2. On the Sign-in Methods page, enable the Anonymous sign-in method.
 
-Enabling this method allows us to create temporary accounts to authenticate with Firebase, making the initial setup very simple. We will in pPart 3 change this to use Github Authentication instead.  
+Enabling this method allows us to create temporary accounts to authenticate with Firebase, making our initial setup very simple. We will in part 3 change this to use Github Authentication instead. 
 
 ## Task 3: Create your Cloud Firestore database
 We now want to setup our database that we will use for the web application.
