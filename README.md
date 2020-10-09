@@ -13,13 +13,14 @@ This course requires that you have node installed. Please follow the next steps 
 Another requirement for running this project is Git. Please follow the guide [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to install Git if you have not already.
 
 ### Google account
-In order to use your own Firebase project you need to have a Google account. 
+In order to setup and create your own Firebase project you need to have a Google account. You can sign up to one [here](https://www.google.com/account/about/).
 
 ## 2 Test that the web application starts 
 
 ### Clone the repository and install packages
 - ✅  Direct yourself to the folder you want to include this project and then clone this project by typing `git clone <link to repo>` in your console application.
-- ✅  After cloning this project, remember to `cd` into the project folder and run `npm install` (Psst. `cd` stand for change directory and is the same as opening the folder in the finder app or directory on your mac/computer).
+- ✅  After cloning this project, remember to `cd` into the project folder. Psst. `cd` stand for change directory and is the same as opening the folder in the finder app or directory on your mac/computer).
+- ✅  Run `npm install` to install the npm packages needed for the project to start. 
 
 ### Start the application
 - ✅  Start the application using the command: `npm run start start`. This will run the app in the development mode.
