@@ -59,12 +59,12 @@ We now have the connections up and running. 👊  Next up is to actually retreiv
 
 2. Add a call to `firebase.firestore().collection('games').get()` that creates a new game list, adds the games to the setGames() and returns it from the function. 
 
-ℹ️  See the official docs for more details: https://firebase.google.com/docs/firestore/query-data/get-data#get_multiple_documents_from_a_collection 
+See the official docs for more details: https://firebase.google.com/docs/firestore/query-data/get-data#get_multiple_documents_from_a_collection 
 
-ℹ️  Also, the document we retreive from Firebase includes many more fields that we are intrested in, you can check this by using `console.log(doc)` within the code. We only need to set the Id and the data contents of a Game. Example: `const gameWithDocId = { id: doc.id ,...doc.data()} as Game;` We set the id to doc.id and copy all the data of the document using `...doc.data`.
+Also, the document we retreive from Firebase includes many more fields that we are intrested in, you can check this by using `console.log(doc)` within the code. We only need to set the Id and the data contents of a Game. Example: `const gameWithDocId = { id: doc.id ,...doc.data()} as Game;` We set the id to doc.id and copy all the data of the document using `...doc.data`.
 
-👉 **Tip:** Since we are using Typescript with React to create the empty game list you need to do something like `const games: Game[] = []`.
+3. Starting the app again you should see the game you created being visable in the game list. Well done! 👏 
 
-3. Starting the app again you should see the game you created being visable in the game list. Well done! 👏
+👉 **Tip:** Since we are using Typescript in the project and it requires types, we need to set the type of list like `const games: Game[] = []`.
 
 👉 **Tip:**  If you are stuck you can either ask any of the helpers from Itera or use the example solution file in path: `__solutions__/part1/useRealtimeGames.ts`.
