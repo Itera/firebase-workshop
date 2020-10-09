@@ -5,20 +5,28 @@ The first thing we want to do is to configure your very own Firebase project! Re
 
 1. Head over to https://firebase.google.com/ and sign in with your Google account.
 2. Create a new project, you can name it whatever you like. Google analytics can be activated if wanted, you then also need to create an analytics account. 
-3. Once the Firebase project is created you should be redirected to the main console for the project. You can click around and get familiar with the different tools. We will mostly use the parts under Develop. 
+3. Once the Firebase project is created you should be redirected to the Firebase console](https://console.firebase.google.com/?authuser=0) for the project. You can click around and get familiar with the different tools. We will mostly use the parts under Develop. 
 
 ℹ️  Firebase actually provides 1 GB of free storage and quite a bit of other functionality without having to pay, which is perfect for students :) Take a look at https://firebase.google.com/pricing/ for more details
 
 ℹ️  For more advanced users it is also possible to create new projects through the Firebase CLI. We will look at this later in the course. 
 
-## Task 2: Create your Cloud Firestore database
+## Task 2: Setup Anonymous Sign-in method
+To make things a bit easier for you we have made some parts of the authentication ready to use in web application. For part 1 and part 2 we don't need any extensive security so we will just configure the Anonymous sign-in method for our project. 
+
+1. In the [Firebase console](https://console.firebase.google.com/?authuser=0), open the Auth section.
+2. On the Sign-in Methods page, enable the Anonymous sign-in method.
+
+Enabling this method allows us to create temporary accounts to authenticate with Firebase, making the initial setup very simple. We will in pPart 3 change this to use Github Authentication instead.  
+
+## Task 3: Create your Cloud Firestore database
 We now want to setup our database that we will use for the web application.
 
-1. Navigate to the "Cloud Firestore" selection in the left toolbar. This is type of database we will create for our solution.
+1. Navigate to the "Cloud Firestore" selection in the left toolbar of the Firebase console](https://console.firebase.google.com/?authuser=0). This is type of database we will create for our solution.
 2. Click the "Create database" button and choose the `start in test mode` secure rules for your cloud firestore. We will change this later once we add proper security. Also select any location where your data will be stored, we reccomend `eur3 (europe-west)`. 
 3. You should now see a view with that visualizes your very own database in Cloud firestore. For more information on the things you see head over to: https://firebase.google.com/docs/firestore/using-console 
 
-## Task 3: Create your first games collection
+## Task 4: Create your first games collection
 A database is not nothing without any data, right? Lets fix that! In our web application we have a need to store different data values such as game and rounds. Lets start up by creating a game collection manually to begin with. 
 
 1. Click the start collection button on the Cloud Firestore console and set the Document Id to be "games". Click next. 
@@ -29,7 +37,7 @@ A database is not nothing without any data, right? Lets fix that! In our web app
 
 ![Example values for the first collection](https://i.ibb.co/BPDwKr4/Screenshot-2020-10-08-at-21-00-39.png)
 
-## Task 4: Connect the application to your Firebase database
+## Task 5: Connect the application to your Firebase database
 Finally, time to actually dig into some code! We will in this task setup the firebase config so that we can communicate with our Cloud Firestore from our web application.
 
 1. First, we need to create a web app config on Firebase. On the overview page of your project you can add a new app. Choose the web app marked with "</>" and give it a name of your choosing. You can leave the "Firebase hosting" option not selected, we will do that from the Firebase CLI later. 
@@ -38,7 +46,7 @@ Finally, time to actually dig into some code! We will in this task setup the fir
 4. Start up your project again and check the console output to make sure that everything works as expected.
 
 
-## Task 5: Retreive the game from Cloud Firestore
+## Task 6: Retreive the game from Cloud Firestore
 We now have the connections up and running. Next up is to actually retreive the game document we configured in task 3. So far our skeleton only allows you choose a username and does not actually retreive any data from Firebase.
 
 1. Head into the file `src/game/useRealtimeGames.ts`, this is where we will add the logic to retreive the games in our Cloud Firestore. The games we retreive is used from our App component to render all the games from the db. 
