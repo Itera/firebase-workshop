@@ -1,6 +1,6 @@
 import firebase from 'firebase';
 
-firebase.initializeApp({
+  const firebaseConfig = {
     apiKey: "someKey",
     authDomain: "yourApp.firebaseapp.com",
     databaseURL: "https://yourApp.firebaseio.com",
@@ -9,4 +9,7 @@ firebase.initializeApp({
     messagingSenderId: "someId",
     appId: "someId",
     measurementId: "someId"
-  });
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);

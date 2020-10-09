@@ -43,10 +43,11 @@ A database is not nothing without any data, right? Lets fix that! In our web app
 ## Task 5: Connect the application to your Firebase database
 Finally, time to actually dig into some code! We will in this task setup the firebase config so that we can communicate with our Cloud Firestore from our web application.
 
-1. First, we need to create a web app config on Firebase. On the overview page of your project you can add a new app. Choose the web app marked with "</>" and give it a name of your choosing. You can leave the "Firebase hosting" option not selected, we will do that from the Firebase CLI later. 
-2. On the next page we are able to retreive some scripts that are specific for our web application. We are interested in the "firebaseConfig" variable. Copy the variable. The script sources we have already included from NPM in the skeleton project for you. 
-3. Go the file `src/firebase.ts` and update the config with your values. 
-4. Start up your project again and check the console output to make sure that everything works as expected.
+1. First, we need to create a Web App config on Firebase. On the "Project Overview page" you can add a new app. Choose the web app marked with "</>" and give it a name of your choosing. You can leave the "Firebase hosting" option not selected, we will do that from the Firebase CLI later. 
+2. On the next page we see some of the necesarry script to connect Firebase to our web application. We are only interested in the "firebaseConfig" variable and initalization. Copy the variable contents. The script sources we have already included from NPM in the skeleton project for you. 
+4. Select Continue to console. 
+5. Go the file `src/firebase.ts` and update the config with the values given. If you forgot to copy the content you can always see it again by selecting your app and going into the settings in the Firebase Console. 
+6. Start up your project again and check the console output to make sure that everything works as expected.
 
 
 ## Task 6: Retreive the game from Cloud Firestore
