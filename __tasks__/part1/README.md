@@ -47,7 +47,7 @@ Finally, time to actually dig into some code! We will in this task setup the fir
 2. On the next page we see some of the necesarry script to connect Firebase to our web application. We are only interested in the "firebaseConfig" variable and initalization. Copy the variable contents. The script sources we have already included from NPM in the skeleton project for you. 
 4. Select Continue to console. 
 5. Go the file `src/firebase.ts` and update the config with the values given. If you forgot to copy the content you can always see it again by selecting your app and going into the settings in the Firebase Console. 
-6. Start up your project again and check the console output to make sure that everything works as expected.
+6. Start up your project again with `npm run start`, try logging in with a username, you should then be redirected to the home page. You can alo check the console output for any issues, there should be a message such as `Logged in with: Anne Borg` to validate the login.
 
 
 ## Task 6: Retreive the game from Cloud Firestore
