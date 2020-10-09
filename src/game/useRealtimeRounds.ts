@@ -9,22 +9,7 @@ export function useRealtimeRounds(
 
   useEffect(() => {
     if (gameId) {
-      const unsubscribeFromSnapshot = firebase
-        .firestore()
-        .collection('games')
-        .doc(gameId)
-        .collection('rounds')
-        .orderBy('timestamp', 'desc')
-        .onSnapshot(function (querySnapshot) {
-          const rounds: Round[] = [];
-          querySnapshot.forEach(function (doc) {
-            const round = { id: doc.id, ...doc.data() } as Round;
-            rounds.push(round);
-          });
-          setGameRounds(rounds);
-        });
-
-      return () => unsubscribeFromSnapshot();
+      // Add your code here for part 2 task 5
     }
   }, [gameId]);
 
