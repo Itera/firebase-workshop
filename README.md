@@ -1,4 +1,4 @@
-# Web development with Firebase Course
+# Web development with Firebase 🔥
 Welcome to our Firebase course 🙌. This course will help you understand some of the basic functionality of Firebase and how to use it together with a web application to create awesome stuff!
 
 ## 1 Prerequisites
