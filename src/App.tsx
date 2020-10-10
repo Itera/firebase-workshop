@@ -38,7 +38,7 @@ const App: FC = () => {
               authenticated={authContext.isLoggedIn}
               games = {games}
               component = {HomePage}
-            ></PrivateRoute>
+            />
             <PublicRoute
               path="/login"
               authenticated={authContext.isLoggedIn}
