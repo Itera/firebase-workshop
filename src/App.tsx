@@ -31,7 +31,7 @@ const App: FC = () => {
               authenticated={authContext.isLoggedIn}
               games = {games}
               component = {CADGame}
-            ></PrivateRoute>
+            />
             <PrivateRoute
               exact
               path="/"
