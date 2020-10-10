@@ -15,7 +15,7 @@ const PublicRoute: React.FC<PublicRouteProps> = ({
     <Route
       {...rest}
       render={(props) =>
-        authenticated === false ? <Component {...props} /> : <Redirect to="/" />
+        authenticated ? <Redirect to="/" /> : <Component {...props} />
       }
     />
   );
