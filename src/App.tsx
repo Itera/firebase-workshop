@@ -43,7 +43,7 @@ const App: FC = () => {
               path="/login"
               authenticated={authContext.isLoggedIn}
               component={LoginPage}
-            ></PublicRoute>
+            />
           </Switch>
         </div>
       </ThemeProvider>
