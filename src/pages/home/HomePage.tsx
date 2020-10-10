@@ -5,10 +5,9 @@ import { Game } from '../../types';
 
 export interface HomePageProps {
   games: Game[];
-  user: firebase.User | null;
 }
 
-export const HomePage: FC<HomePageProps> = ({ games, user }) => {
+export const HomePage: FC<HomePageProps> = ({ games }) => {
   return (
     <div className="home">
       <h1>Cards Against Developers!</h1>
