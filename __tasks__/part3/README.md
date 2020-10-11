@@ -31,7 +31,7 @@ Hopefully you had some ideas on the issues with our current security rules. They
 ## Task 3: Host the application on the cloud ☁️ 
 With our app fairly secure we can start thinking about deploying it to the world wide web so that we can game with our remote friends 👭 👬 Firebase hosting is perfect for this. Remember you can read the [official docs](https://firebase.google.com/docs/hosting) for more information on how Firebase Hosting works. 
 
-1. First we want to initate Firebase on the project. We need to have the Firebase CLI installed first. We can install it with NPM by using the following command in a terminal `npm install -g firebase-tools`.
+1. First we want to initate Firebase on the project. We need to have the Firebase CLI installed first. We can install it with NPM by using the following command in a terminal `npm install -g firebase-tools`. You might need to run this command with `sudo` since this command installs firebase tools globally on your computer.
 2. Login to your firebase account with `firebase login` so that Firebase CLI can retreive information from your project.
 3. Now we can initiate our project. Navigate to the root folder of the git repository and use the command `firebase init hosting`. 
 - Select "use an existing project" and choose the project you made for this course. 
