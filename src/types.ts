@@ -3,7 +3,7 @@ export type DeckID = string;
 export type CardID = number;
 
 export interface Player {
-  uid: GameID;
+  uid: string;
   displayName: string | null;
 }
 

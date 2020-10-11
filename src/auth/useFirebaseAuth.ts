@@ -12,8 +12,8 @@ function useFirebaseAuth() {
     let authResult: firebase.auth.UserCredential;
 
     try {
-      // Change code here for Part 3 task 1
-      authResult = await firebase.auth().signInAnonymously();
+      const provider = new firebase.auth.GithubAuthProvider();
+      authResult = await firebase.auth().signInWithPopup(provider);
 
       // No need to go further change above.
       var user = firebase.auth().currentUser;
